@@ -64,3 +64,10 @@ persp3d(x=p, y=p, z=z)
 # persp3d(x=p, y=p, z=zreal)
 
 
+###############
+
+plot(density(rbeta(1000,9,1)))
+
+rmse <- read.csv("D:/Documents and Settings/Nazi/Desktop/value_nnet_rmse.log", header = F)$V1
+plot(rmse, type='l')
+plot(tail(rmse,400), type='l')
